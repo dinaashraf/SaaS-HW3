@@ -1,0 +1,179 @@
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-08-09 16:45:46 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.5ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (10.9ms)
+Completed 200 OK in 267ms (Views: 240.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2012-08-09 16:45:47 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (44.7ms)
+Completed 200 OK in 47ms (Views: 47.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-08-09 16:47:20 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 259ms (Views: 236.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2012-08-09 16:47:21 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (19.0ms)
+Completed 200 OK in 22ms (Views: 21.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2012-08-09 16:47:21 -0700
+  Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>{"title"=>"Men In Black", "rating"=>"PG-13", "release_date(1i)"=>"2012", "release_date(2i)"=>"8", "release_date(3i)"=>"9"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (48.1ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 09 Aug 2012 23:47:21 UTC +00:00], ["description", nil], ["rating", "PG-13"], ["release_date", Thu, 09 Aug 2012 00:00:00 UTC +00:00], ["title", "Men In Black"], ["updated_at", Thu, 09 Aug 2012 23:47:21 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/movies
+Completed 302 Found in 63ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-09 16:47:21 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (4.2ms)
+Completed 200 OK in 7ms (Views: 6.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/" for 127.0.0.1 at 2012-08-09 16:49:08 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (11.1ms)
+Completed 200 OK in 261ms (Views: 237.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2012-08-09 16:49:09 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2012-08-09 16:49:09 -0700
+  Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>{"title"=>"Men In Black", "rating"=>"PG-13", "release_date(1i)"=>"2012", "release_date(2i)"=>"8", "release_date(3i)"=>"9"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (44.3ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 09 Aug 2012 23:49:09 UTC +00:00], ["description", nil], ["rating", "PG-13"], ["release_date", Thu, 09 Aug 2012 00:00:00 UTC +00:00], ["title", "Men In Black"], ["updated_at", Thu, 09 Aug 2012 23:49:09 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/movies
+Completed 302 Found in 58ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-09 16:49:09 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (4.0ms)
+Completed 200 OK in 7ms (Views: 5.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-09 16:50:01 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (10.3ms)
+Completed 200 OK in 258ms (Views: 235.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies/new" for 127.0.0.1 at 2012-08-09 16:50:02 -0700
+  Processing by MoviesController#new as HTML
+Rendered movies/new.html.haml within layouts/application (19.6ms)
+Completed 200 OK in 22ms (Views: 21.7ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/movies" for 127.0.0.1 at 2012-08-09 16:50:02 -0700
+  Processing by MoviesController#create as HTML
+  Parameters: {"utf8"=>"✓", "movie"=>{"title"=>"Men In Black", "rating"=>"PG-13", "release_date(1i)"=>"2012", "release_date(2i)"=>"8", "release_date(3i)"=>"9"}, "commit"=>"Save Changes"}
+  [1m[35m (0.1ms)[0m  SAVEPOINT active_record_1
+  [1m[36mSQL (43.6ms)[0m  [1mINSERT INTO "movies" ("created_at", "description", "rating", "release_date", "title", "updated_at") VALUES (?, ?, ?, ?, ?, ?)[0m  [["created_at", Thu, 09 Aug 2012 23:50:02 UTC +00:00], ["description", nil], ["rating", "PG-13"], ["release_date", Thu, 09 Aug 2012 00:00:00 UTC +00:00], ["title", "Men In Black"], ["updated_at", Thu, 09 Aug 2012 23:50:02 UTC +00:00]]
+  [1m[35m (0.1ms)[0m  RELEASE SAVEPOINT active_record_1
+Redirected to http://www.example.com/movies
+Completed 302 Found in 57ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-09 16:50:02 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (3.8ms)
+Completed 200 OK in 7ms (Views: 5.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 04:59:47 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (10.7ms)
+Completed 200 OK in 259ms (Views: 236.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:04:29 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (3.6ms)
+Completed 500 Internal Server Error in 263ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:08:33 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (1.0ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (13.2ms)
+Completed 500 Internal Server Error in 258ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:14:00 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (12.8ms)
+Completed 200 OK in 262ms (Views: 238.6ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 127.0.0.1 at 2012-08-10 05:14:02 -0700
+  Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "search_terms"=>"Movie That Does Not Exist", "commit"=>"Search TMDb"}
+Completed 500 Internal Server Error in 27ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:19:49 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (12.5ms)
+Completed 200 OK in 260ms (Views: 237.2ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 127.0.0.1 at 2012-08-10 05:19:50 -0700
+  Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "search_terms"=>"Movie That Does Not Exist", "commit"=>"Search TMDb"}
+Redirected to http://www.example.com/movies
+Completed 302 Found in 1ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:19:50 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)
+Rendered movies/index.html.haml within layouts/application (5.1ms)
+Completed 200 OK in 8ms (Views: 6.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:23:59 -0700
+  Processing by MoviesController#index as HTML
+  [1m[36mMovie Load (0.3ms)[0m  [1mSELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)[0m
+Rendered movies/index.html.haml within layouts/application (12.3ms)
+Completed 200 OK in 280ms (Views: 257.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/movies/search_tmdb" for 127.0.0.1 at 2012-08-10 05:24:00 -0700
+  Processing by MoviesController#search_tmdb as HTML
+  Parameters: {"utf8"=>"✓", "search_terms"=>"Movie That Does Not Exist", "commit"=>"Search TMDb"}
+Redirected to http://www.example.com/movies
+Completed 302 Found in 2ms
+
+
+Started GET "/movies" for 127.0.0.1 at 2012-08-10 05:24:00 -0700
+  Processing by MoviesController#index as HTML
+  [1m[35mMovie Load (0.2ms)[0m  SELECT "movies".* FROM "movies" WHERE "movies"."rating" IN (NULL)
+Rendered movies/index.html.haml within layouts/application (5.0ms)
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.2ms)
